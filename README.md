@@ -1,8 +1,5 @@
 # Laravel Vercel Installer
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/9b0a78d5e14c3c85fe4f/maintainability)](https://codeclimate.com/github/kawax/laravel-vercel-installer/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/9b0a78d5e14c3c85fe4f/test_coverage)](https://codeclimate.com/github/kawax/laravel-vercel-installer/test_coverage)
-
 Install some files to run Laravel on Vercel.
 
 ## Requirements
