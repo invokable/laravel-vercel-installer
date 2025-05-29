@@ -1,5 +1,8 @@
 # Laravel Vercel Installer
 
+[![Maintainability](https://qlty.sh/badges/428ed7a1-e87d-4a5e-962f-021bc56a56fb/maintainability.svg)](https://qlty.sh/gh/invokable/projects/laravel-vercel-installer)
+[![Code Coverage](https://qlty.sh/badges/428ed7a1-e87d-4a5e-962f-021bc56a56fb/test_coverage.svg)](https://qlty.sh/gh/invokable/projects/laravel-vercel-installer)
+
 Install some files to run Laravel on Vercel.
 
 ## Requirements
