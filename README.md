@@ -22,6 +22,8 @@ php artisan vercel:install
 composer remove revolution/laravel-vercel-installer --dev
 ```
 
+Once you have run the command you can uninstall this package.
+
 ## vercel.json
 It will probably not work with the new spec that uses `functions` and `rewrites` in vercel.json.
 
