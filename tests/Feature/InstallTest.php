@@ -11,7 +11,7 @@ class InstallTest extends TestCase
 {
     private string $path;
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -22,7 +22,7 @@ class InstallTest extends TestCase
         File::ensureDirectoryExists($this->path);
     }
 
-    public function tearDown(): void
+    protected function tearDown(): void
     {
         File::deleteDirectory($this->path);
 
@@ -35,8 +35,8 @@ class InstallTest extends TestCase
     public function test_vercel_install()
     {
         $this->artisan('vercel:install')
-             ->assertSuccessful()
-             ->expectsOutput('Vercel resources installed successfully.');
+            ->assertSuccessful()
+            ->expectsOutput('Vercel resources installed successfully.');
 
         $this->assertFileExists(base_path('vercel.json'));
         $this->assertFileExists(base_path('.vercelignore'));
