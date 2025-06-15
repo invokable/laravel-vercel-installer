@@ -1,2 +1,50 @@
-vendor
+# Dependencies
+vendor/
+node_modules/
+
+# Composer
 composer.lock
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Build artifacts
+build/
+dist/
+*.log
+
+# Test artifacts
+.phpunit.result.cache
+coverage/
+.coverage
+coverage.xml
+clover.xml
+
+# Cache files
+*.cache
+
+# Environment files (should be configured in Vercel dashboard)
+.env
+.env.local
+.env.*.local
+
+# But do NOT exclude .github/copilot-instructions.md
+!.github/copilot-instructions.md
