@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1749956881">
-  <project timestamp="1749956881" name="Clover Coverage">
+<coverage generated="1749957105">
+  <project timestamp="1749957105" name="Clover Coverage">
     <package name="Revolution\Vercel\Console">
       <file name="/home/runner/work/laravel-vercel-installer/laravel-vercel-installer/src/Console/InstallCommand.php">
         <class name="Revolution\Vercel\Console\InstallCommand" namespace="Revolution\Vercel\Console">
