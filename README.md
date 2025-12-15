@@ -59,7 +59,7 @@ If you define the migrate command in the scripts section of `composer.json`, it 
 
 ```json
     "scripts": {
-        "vercel":
+        "vercel": [
             "@php artisan migrate --force"
         ]
     }
