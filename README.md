@@ -52,14 +52,25 @@ Secret env is set in the vercel settings page.
 `php artisan key:generate --show` command generates a new key without updating the .env file. Set this key on the Settings page `APP_KEY`.
 
 ## Database
-You can use Vercel Postgres or AWS RDS.
+You can use AWS RDS or any public DB.
 
-https://vercel.com/docs/storage/vercel-postgres
+## Migration command
+If you define the migrate command in the scripts section of `composer.json`, it will be executed during deployment.
+
+```json
+    "scripts": {
+        "vercel":
+            "@php artisan migrate --force"
+        ]
+    }
+```
 
 ## Cache and session
-You can't use the `file` driver.
+`array` is default. You can't use the `file` driver.
 
 If you're using a database, you can use the `database` driver.
+
+We recommend using database or array with the `failover` driver.
 
 ## TrustProxies
 
