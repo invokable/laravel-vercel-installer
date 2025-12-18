@@ -19,12 +19,8 @@
             "dest": "/public/build/assets/$1"
         },
         {
-            "src": "/favicon.ico",
-            "dest": "/public/favicon.ico"
-        },
-        {
-            "src": "/favicon.png",
-            "dest": "/public/favicon.png"
+            "src": "/favicon.(.*)",
+            "dest": "/public/favicon.$1"
         },
         {
             "src": "/apple-touch-icon.png",
