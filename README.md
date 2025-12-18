@@ -51,6 +51,46 @@ Secret env is set in the vercel settings page.
 
 `php artisan key:generate --show` command generates a new key without updating the .env file. Set this key on the Settings page `APP_KEY`.
 
+## Assets
+
+Even if you build css/js assets during deployment, they probably won't be loaded. Since `@vercel/static` simply distributes the files included in the repository as is, `@vercel/static` cannot access files built with `vercel-php`.
+
+There are two solutions: include pre-built files in the repository, or display assets inline with `Vite::content()`.
+
+### Include pre-build assets
+
+Build the assets locally and include them in the repository.
+
+```php
+// .gitignore
+
+!/public/build
+```
+
+### Inline assets
+
+Use `Vite::content` to display assets inline instead of `@vite`.
+
+```json
+    "scripts": {
+        "vercel": [
+            "@php artisan migrate --force",
+            "npm install",
+            "npm run build"
+        ]
+    }
+```
+
+```php
+{{--@vite(['resources/css/app.css', 'resources/js/app.js'])--}}
+<style>
+    {!! Vite::content('resources/css/app.css') !!}
+</style>
+<script>
+    {!! Vite::content('resources/js/app.js') !!}
+</script>
+```
+
 ## Database
 You can use AWS RDS or any public DB.
 
