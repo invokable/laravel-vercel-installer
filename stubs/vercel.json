@@ -23,6 +23,14 @@
             "dest": "/public/favicon.ico"
         },
         {
+            "src": "/favicon.png",
+            "dest": "/public/favicon.png"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "dest": "/public/apple-touch-icon.png"
+        },
+        {
             "src": "/robots.txt",
             "dest": "/public/robots.txt"
         },
