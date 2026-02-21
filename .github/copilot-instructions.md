@@ -12,8 +12,8 @@ The Laravel Vercel Installer is a development package that simplifies the proces
 
 ## Requirements
 
-- **PHP**: >= 8.2
-- **Laravel**: >= 11.0
+- **PHP**: >= 8.3
+- **Laravel**: >= 12.0
 - **Composer**: For package management
 
 ## Installation
