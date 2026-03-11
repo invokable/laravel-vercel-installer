@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Tests;
 
+use Illuminate\Foundation\Application;
 use Revolution\Vercel\VercelInstallerServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
@@ -11,7 +12,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     /**
      * Load package service provider.
      *
-     * @param  \Illuminate\Foundation\Application  $app
+     * @param  Application  $app
      * @return array
      */
     protected function getPackageProviders($app)
@@ -24,7 +25,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     /**
      * Load package alias.
      *
-     * @param  \Illuminate\Foundation\Application  $app
+     * @param  Application  $app
      * @return array
      */
     protected function getPackageAliases($app)
@@ -37,7 +38,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     /**
      * Define environment setup.
      *
-     * @param  \Illuminate\Foundation\Application  $app
+     * @param  Application  $app
      * @return void
      */
     protected function getEnvironmentSetUp($app)
